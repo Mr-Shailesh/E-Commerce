@@ -20,7 +20,6 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your submit logic here
   };
   return (
     <div className="SignUpContainer">

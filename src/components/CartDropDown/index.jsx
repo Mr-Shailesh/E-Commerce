@@ -14,13 +14,9 @@ const CartDropDown = ({ cartItems }) => {
     <div className="dropDownContainer">
       {cartItems.length ? (
         <div className="cartItems" CartItems>
-          {/* <TransitionGroup> */}
           {cartItems.map((cartItem) => (
-            //   <Collapse key={cartItem.id} timeout={400}>
             <CartItem key={cartItem.id} cartItem={cartItem} />
-            //   </Collapse>
           ))}
-          {/* </TransitionGroup> */}
         </div>
       ) : (
         <div className="EmptyMessage ">Your cart is empty</div>

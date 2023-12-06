@@ -31,17 +31,9 @@ const Checkout = () => {
             <span>Remove</span>
           </div>
         </div>
-        {/* <TransitionGroup
-          style={{
-            width: "100%",
-          }}
-        > */}
         {cartItems.map((cartItem) => (
-          //   <Collapse key={cartItem.id} in={true} timeout={300}>
           <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-          //   </Collapse>
         ))}
-        {/* </TransitionGroup> */}
         <div className="Total">Total: ${cartTotal.toFixed(2)}</div>
         {cartItems.length > 0 && <PaymentForm />}
       </div>

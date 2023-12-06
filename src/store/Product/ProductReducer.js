@@ -17,8 +17,10 @@ export const ProductReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case GET_DATA_REQUEST:
       return { ...state, loading: true };
+
     case GET_DATA_SUCCESS:
       return { ...state, data: payload, loading: false };
+
     case ADD_TO_CART:
       const existingItemIndex = state.cartItem.findIndex(
         (item) => item.id === payload.id
@@ -57,7 +59,6 @@ export const ProductReducer = (state = initialState, { type, payload }) => {
       }
 
       if (itemToRemove.quantity > 1) {
-        // If the quantity is greater than 1, reduce the quantity
         const updatedCartItem = state.cartItem.map((item) =>
           item.id === payload ? { ...item, quantity: item.quantity - 1 } : item
         );
@@ -70,7 +71,6 @@ export const ProductReducer = (state = initialState, { type, payload }) => {
           cartTotal: updatedCartTotal,
         };
       } else {
-        // If the quantity is 1, remove the item
         const updatedCartItem = state.cartItem.filter(
           (item) => item.id !== payload
         );

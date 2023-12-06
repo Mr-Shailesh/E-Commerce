@@ -6,9 +6,8 @@ import {
   REMOVE_SINGLE_ITEM,
 } from "./ProductReducer";
 
-export const getProductData = (payload) => ({
+export const getProductData = () => ({
   type: GET_DATA_REQUEST,
-  payload: "",
 });
 
 export const addToCart = (item) => ({

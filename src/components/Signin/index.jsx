@@ -29,14 +29,14 @@ const Signin = () => {
       </div>
       <form className="form" onSubmit={handleSubmit}>
         <Input
-         className="inputAntd"
+          className="inputAntd"
           placeholder="Email"
           name="email"
           value={email}
           onChange={handleChange}
         />
         <Input
-         className="inputAntd"
+          className="inputAntd"
           placeholder="Password"
           type="password"
           name="password"
