@@ -1,0 +1,7 @@
+.AuthContainer {
+  display: flex;
+  max-width: 90rem;
+  margin: 3rem auto;
+  justify-content: center;
+  gap: 150px;
+}

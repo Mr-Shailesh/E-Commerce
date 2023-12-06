@@ -1,0 +1,40 @@
+.PaymentFormContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormContainer {
+  min-width: 60rem;
+}
+
+.PaymentInfoContainer {
+  margin: 4.5rem 0 2.75rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.PaymentInfo {
+  font-size: 20px;
+  text-align: center;
+  line-height: 15px;
+
+  > span {
+    font-weight: bold;
+  }
+}
+
+.PaymentTitle {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.PaymentButton {
+  margin-top: 3rem;
+  margin-left: auto;
+}

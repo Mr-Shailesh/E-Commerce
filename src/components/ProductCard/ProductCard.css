@@ -1,0 +1,34 @@
+.ProductCartContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  gap: 10px;
+  max-height: 300px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.image {
+  width: 100%;
+  height: 45%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.Footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Name {
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
+.Price {
+  width: 10%;
+}

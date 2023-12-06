@@ -1,0 +1,14 @@
+.SignUpContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+
+  > h2 {
+    font-size: 2.8rem;
+    margin-block: 1rem;
+  }
+
+  span {
+    font-size: 1.8rem;
+  }
+}
