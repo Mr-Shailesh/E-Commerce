@@ -86,7 +86,6 @@ const PaymentForm = () => {
             </Button>
           </div>
         </form>
-        <button className="PaymentButton">Pay Now</button>
       </div>
     </div>
   );
